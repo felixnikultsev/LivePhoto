@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 body {
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
+  font-family: 'Roboto';
 }
 
 .container {
@@ -14,7 +18,8 @@ body {
   margin: 0 auto;
 }
 
-.nav, .footer {
+.nav,
+.footer {
   display: flex;
   background-color: #ffeaab;
   padding: 10px 20px;
@@ -22,7 +27,7 @@ body {
 
 .link {
   margin-right: 15px;
-  color: #ffffff;
+  color: #000000;
   font-weight: 600;
   font-size: 18px;
   text-decoration: none;
