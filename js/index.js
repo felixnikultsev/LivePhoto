@@ -21,6 +21,6 @@ function addTodo() {
     });
 
     localStorage.setItem('todos', JSON.stringify(items));
-    window.location.pathname = '/todos.html';
+    window.location.pathname = '/LivePhoto/todos.html';
   }
 }
