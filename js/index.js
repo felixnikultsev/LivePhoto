@@ -2,7 +2,7 @@ const input = document.querySelector('.input');
 const addButton = document.querySelector('.add-button');
 
 const items = JSON.parse(localStorage.getItem('todos')) || [];
-console.log(window.location);
+
 addButton.addEventListener('click', addTodo);
 input.addEventListener('input', () => {
   if (input.value) {
@@ -21,6 +21,6 @@ function addTodo() {
     });
 
     localStorage.setItem('todos', JSON.stringify(items));
-    window.location.pathname = '/LivePhoto/todos.html';
+    window.location.href = window.location.origin + '/LivePhoto/todos.html';
   }
 }
