@@ -2,7 +2,7 @@ const input = document.querySelector('.input');
 const addButton = document.querySelector('.add-button');
 
 const items = JSON.parse(localStorage.getItem('todos')) || [];
-
+console.log(window.location);
 addButton.addEventListener('click', addTodo);
 input.addEventListener('input', () => {
   if (input.value) {
